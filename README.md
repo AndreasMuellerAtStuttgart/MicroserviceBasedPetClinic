@@ -30,3 +30,5 @@ Die erste Version der API soll außerdem folgende nicht-fachliche Anforderungen 
 
 1. Shared Model für die Services implementiert, verfügbar unter: https://github.com/AndreasMuellerAtStuttgart/PetClinicSharedModel
 Shared Model wurde implementiert um Code-Duplikation zwischen Services zu vermeiden. 
+
+2. Shared Model refactored um Ids zur Identifikation der Fachentitäten zu benutzen: Hier habe ich mir auch im Lichte dieses Artikels: https://enterprisecraftsmanship.com/posts/dont-use-ids-domain-entities/ Gedanken gemacht ob ich in den Objekten die nachher über die REST-API an den Client gehen, also im Shared Model, tatsächlich ids brauche, aber ich bin zu dem Schluss gekommen dass dem so ist. Die Fachobjekte bieten keinen eindeutigen Business Key an, und wenn ich zum Beispiel in der Datenbank für die Appointments ein Appointment speichern will brauche ich einen Weg um die Fachentitäten die an dem Appointment teilnehmen eindeutig zu identifizieren. Deshalb brauche ich eine id weil die Identifikation über Kombinationen der anderen Felder nicht eindeutig möglich ist.
