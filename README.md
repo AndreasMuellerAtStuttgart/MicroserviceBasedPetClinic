@@ -29,3 +29,4 @@ Die erste Version der API soll außerdem folgende nicht-fachliche Anforderungen 
 30.04.2020: Erste Coding-Arbeiten
 
 1. Shared Model für die Services implementiert, verfügbar unter: https://github.com/AndreasMuellerAtStuttgart/PetClinicSharedModel
+Shared Model wurde implementiert um Code-Duplikation zwischen Services zu vermeiden. 
