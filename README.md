@@ -40,3 +40,6 @@ Shared Model wurde implementiert um Code-Duplikation zwischen Services zu vermei
 04.05.2020: Erste Arbeiten am Backend Service abgeschlossen, momentaner Stand ist dass an dem Service-Layer zu Pet-Persistierung MapStruct eingeführt werden muss.
 
 05.05.2020: Heute habe ich in einem Kurs über Microservices gelernt dass es aus security-Gründen schlechte Praxis ist die Datenbank-Id in HTTP-Requests zu verwenden weil man damit feindlichen Benutzern einen Hinweis darauf gibt, wie die Datenbank-Ids aufgebaut sind und er damit malicious requests zum löschen von vielen Usern absetzen könnte. Deshalb benutzt man anscheinend 2 Ids, eine randomly generated Id die in HTTP-Requests benutzt wird und intern dann eine Datenbank-Id die automatisch von der Datenbank generiert wird. Dieses Pattern umzusetzen nehme ich in die projektweiten TO DOs auf, die im wiki dieses repositories geführt werden. 
+
+08.05.2020: Auf internem Service-Layer im PersistenceService Service zum Handling von CRUD-Operationen für Doctor-Objekte implementiert 
+und getestet, muss eventuell nochmal auf mögliche Fehlerfälle refactored und Tests erweitert werden.
